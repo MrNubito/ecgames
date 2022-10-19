@@ -36,7 +36,7 @@
       ]
     },
     "path": "@PROJECT_PATH@",
-    "name": "EC Games-clone",
+    "name": "EC Games",
     "versionFirst": "5.4.1",
     "siteFonts": [
       {
@@ -879,9 +879,1618 @@
             }
           },
           "_name": "header2",
-          "_customHTML": "<section group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"25\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"25\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Arrow\" name=\"showArrow\">\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Additional</header>\n        <input type=\"checkbox\" title=\"Media On Right/Left\" name=\"mediaLeft\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@THEME_PATH@/components/_images/children.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#f2f6ff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/201169087\n            \">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n\n\n    <div class=\"container-fluid\">\n        <div class=\"row content-row\">\n            <div class=\"col-lg-6 col-md-12 imageContainer\">\n                <img src=\"@PROJECT_PATH@/assets/images/mbr-1125x804.png\" alt=\"Mobirise\" title>\n            </div>\n\n            <div class=\"col-md-12 col-lg-6 m-auto align-left right-wrapper\">\n                <h1 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><span class=\"line-bg-warning\">We are on&nbsp;</span></h1>\n                <h3 class=\"mbr-section-subtitle mbr-fonts-style align-left\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\" data-app-selector=\".mbr-section-subtitle\"><span class=\"line-bg-primary\">Maintenance&nbsp;</span></h3>\n                <p class=\"mbr-text mbr-light  mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"></p>\n                <div mbr-buttons mbr-theme-style=\"display-7\" class=\"button-svg mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"index.html#shop1-n\" data-app-placeholder=\"Type Text\">Read More<svg fill=\"transparent\" stroke-width=\"2\" stroke-dasharray=\"9 5\" stroke-dashoffset=\"0\" stroke-linecap=\"round\" class=\"wgl-dashes svg1 inner-dashed-border animated-dashes\"><rect x=\"2px\" y=\"2px\" rx=\"25px\" ry=\"25px\" width=\"100%\" height=\"100%\"></rect></svg>\n                </a></div>\n              </div>\n            </div>\n\n\n        </div>\n\n\n\n    \n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
+          "_customHTML": "<section group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"25\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"25\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Arrow\" name=\"showArrow\">\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <header>Additional</header>\n        <input type=\"checkbox\" title=\"Media On Right/Left\" name=\"mediaLeft\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@THEME_PATH@/components/_images/children.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#f2f6ff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/201169087\n            \">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n\n\n    <div class=\"container-fluid\">\n        <div class=\"row content-row\">\n            <div class=\"col-lg-6 col-md-12 imageContainer\">\n                <img src=\"@PROJECT_PATH@/assets/images/ec-games-600x600.png\" alt=\"Mobirise\" title>\n            </div>\n\n            <div class=\"col-md-12 col-lg-6 m-auto align-left right-wrapper\">\n                <h1 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><span class=\"line-bg-warning\">About Us</span></h1>\n                <h3 class=\"mbr-section-subtitle mbr-fonts-style align-left\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\" data-app-selector=\".mbr-section-subtitle\"><span class=\"line-bg-primary\">Entertainment</span></h3>\n                <p class=\"mbr-text mbr-light  mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">We are a small business but with the best prices.</p>\n                <div mbr-buttons mbr-theme-style=\"display-7\" class=\"button-svg mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"index.html#shop1-n\" data-app-placeholder=\"Type Text\">Read More<svg fill=\"transparent\" stroke-width=\"2\" stroke-dasharray=\"9 5\" stroke-dashoffset=\"0\" stroke-linecap=\"round\" class=\"wgl-dashes svg1 inner-dashed-border animated-dashes\"><rect x=\"2px\" y=\"2px\" rx=\"25px\" ry=\"25px\" width=\"100%\" height=\"100%\"></rect></svg>\n                </a></div>\n              </div>\n            </div>\n\n\n        </div>\n\n\n\n    \n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
           "_cid": "rHBadprQCZ",
           "_anchor": "header2-p",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-text": {
+              "text-align": "left"
+            },
+            "h4": {
+              "text-align": "center",
+              "margin-bottom": "0"
+            },
+            "p": {
+              "text-align": "center",
+              "margin": "0"
+            },
+            ".card-img span": {
+              "font-size": "96px",
+              "color": "#149dcc"
+            },
+            ".mbr-iconfont": {
+              "transition": "all 0.3s",
+              "font-size": "2rem"
+            },
+            ".card-title": {
+              "color": "#12265a"
+            },
+            ".card": {
+              "background-color": "#fff",
+              "border-radius": "30px",
+              "align-items": "center",
+              "position": "relative",
+              "transition": "0.4s",
+              "padding": "0.8rem"
+            },
+            ".card-1": {
+              "margin-right": "2rem"
+            },
+            ".card-2": {},
+            ".card-3": {
+              "margin-left": "2rem"
+            },
+            "img": {
+              "width": "auto",
+              "height": "180px",
+              "margin-top": "1rem"
+            },
+            ".card:hover": {
+              "transform": "translateY(-20px)"
+            },
+            ".container-fluid": {
+              "max-width": "1200px"
+            },
+            ".btn": {
+              "color": "#fff",
+              "padding-left": "0",
+              "padding-right": "0",
+              "line-height": "1.5rem"
+            },
+            ".mbr-section-btn": {
+              "display": "flex",
+              "align-items": "center",
+              "margin-bottom": "1.6rem"
+            },
+            ".mbr-section-btn:hover .icon-btn": {
+              "transform": "rotateZ(180deg)"
+            },
+            "@media (max-width: 767px)": {
+              "padding-top": "(@paddingTop * 5px)",
+              "padding-bottom": "(@paddingBottom * 4px)",
+              ".card": {
+                "margin-bottom": "1rem"
+              },
+              ".media-container-row": {
+                "margin": "0 0rem"
+              },
+              ".card-1": {
+                "margin-right": "0rem"
+              },
+              ".card-3": {
+                "margin-left": "0rem"
+              }
+            },
+            "@media (min-width: 767px) and (max-width: 992px)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)",
+              ".card": {
+                "margin-bottom": "1rem"
+              },
+              ".media-container-row": {
+                "margin": "0 0rem"
+              },
+              ".card-1": {
+                "margin-right": "0rem"
+              },
+              ".card-2": {},
+              ".card-3": {
+                "margin-left": "0rem"
+              }
+            },
+            "@media (min-width: 992px)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)",
+              ".media-container-row": {
+                "margin": "0 2rem"
+              },
+              ".card-1": {
+                "margin-right": "2rem"
+              },
+              ".card-2": {},
+              ".card-3": {
+                "margin-left": "2rem"
+              }
+            },
+            "@media (min-width: 1200px)": {},
+            ".icon-btn": {
+              "transition": "0.3s",
+              "line-height": "0"
+            },
+            ".card-img": {
+              "text-align": "center"
+            },
+            ".inner-dashed-border": {
+              "position": "absolute",
+              "left": "0",
+              "top": "0",
+              "width": "100%",
+              "height": "100%",
+              "pointer-events": "none",
+              "animation": "dashed_border_running 20s linear infinite both",
+              "animation-play-state": "paused",
+              "stroke-width": "2",
+              "stroke-dasharray": "9, 5",
+              "stroke-dashoffset": "0",
+              "stroke-linecap": "round",
+              "fill": "none",
+              "transition": "0.4s"
+            },
+            ".card:hover .inner-dashed-border": {
+              "animation-play-state": "running"
+            },
+            ".card .svg1": {
+              "stroke": "@secondaryColor"
+            },
+            ".card .svg2": {
+              "stroke": "@warningColor"
+            },
+            ".card .svg3": {
+              "stroke": "@primaryColor"
+            },
+            "@keyframes dashed_border_running": {
+              "100%": {
+                "stroke-dashoffset": "-1000"
+              }
+            },
+            "svg": {
+              "position": "relative"
+            },
+            "rect": {
+              "position": "absolute"
+            },
+            ".wgl-icon": {
+              "border-radius": "50%",
+              "width": "40px",
+              "height": "40px",
+              "margin-right": "2rem",
+              "position": "relative"
+            },
+            ".wgl-icon1": {
+              "background-color": "@secondaryColor"
+            },
+            ".wgl-icon2": {
+              "background-color": "@warningColor"
+            },
+            ".wgl-icon3": {
+              "background-color": "@primaryColor"
+            },
+            ".circle-icon": {
+              "display": "flex",
+              "align-items": "center",
+              "justify-content": "center",
+              "width": "100%",
+              "position": "relative"
+            },
+            ".icon1": {
+              "font-size": "1.3rem",
+              "font-weight": "900",
+              "color": "#fff",
+              "position": "absolute",
+              "top": "10px",
+              "left": "10px"
+            },
+            ".svg-1": {
+              "position": "absolute",
+              "bottom": "0"
+            },
+            ".svg-1 path": {
+              "fill": "@LineColor"
+            },
+            ".svg-2": {
+              "position": "absolute",
+              "top": "0"
+            },
+            ".svg-2 path": {
+              "fill": "@LineColor"
+            },
+            ".svg1, .svg2, .svg3": {
+              "position": "absolute",
+              "rect": {
+                "width": "~\"calc(100% - 4px)\"",
+                "height": "~\"calc(100% - 4px)\""
+              }
+            },
+            ".card-box": {
+              "margin-top": "1.7rem",
+              "margin-bottom": "1rem"
+            },
+            ".card-title, .card-img": {
+              "text-align": "left"
+            }
+          },
+          "_name": "features4",
+          "_customHTML": "<section class=\"features1\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"12\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"12\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <header>Additional</header>\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n        </select>\n        <header>Color</header>\n        <input type=\"color\" title=\"Line\" name=\"LineColor\" value=\"#ffffff\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/children.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#690a65\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/201169087\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <svg class=\"svg-2\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1428 94.61\"><g id=\"Layer_3\" data-name=\"Layer 3\"><path class=\"cls-1\" d=\"M-83,10\" transform=\"translate(83 33)\"></path><path class=\"cls-2\" d=\"M986.33,46.5s132.5-37,318,0C1304.33,46.5,1200.83,80.5,986.33,46.5Z\" transform=\"translate(83 33)\"></path></g><g id=\"Layer_4\" data-name=\"Layer 4\"><path class=\"cls-2\" d=\"M-83,10S127,65.11,394,30.06,986.33,46.5,986.33,46.5,1218,83,1345,38V-33H-83Z\" transform=\"translate(83 33)\"></path></g></svg>\n    <div class=\"container-fluid\">\n        <div class=\"media-container-row\">\n\n            <div class=\"card card-1 col-12 col-md-8\" mbr-class=\"{\n              'col-lg-6': cardsAmount == '2',\n              'col-lg-4': cardsAmount == '3'}\">\n                             \n              <div class=\"circle-icon\">\n                <span class=\"wgl-icon wgl-icon1\"><a href=\"#\"><span mbr-if mbr-icon class=\"icon1 mbr-iconfont socicon mbrib-success\"></span></a></span>\n                <div class=\"card-box\">\n                  <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\">PC</h4>\n                \n                  <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">Best Option</p>\n                </div>\n                <svg class=\"wgl-dashes svg1 inner-dashed-border animated-dashes\"><rect x=\"2px\" y=\"2px\" rx=\"30px\" ry=\"30px\" width=\"100%\" height=\"100%\"></rect></svg>\n              </div>\n            </div>\n            <div class=\"card card-2 col-12 col-md-8\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-6': cardsAmount == '2',\n                        'col-lg-4': cardsAmount == '3'}\">\n              <div class=\"circle-icon\">\n                <span class=\"wgl-icon wgl-icon2\"><a href=\"#\"><span mbr-if mbr-icon class=\"icon1 mbr-iconfont socicon mbrib-success\"></span></a></span>\n                <div class=\"card-box\">\n                    <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\">XBOX</h4>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                        Never Sleep</p>\n                </div>\n                <svg class=\"wgl-dashes svg2 inner-dashed-border animated-dashes\"><rect x=\"2px\" y=\"2px\" rx=\"30px\" ry=\"30px\" width=\"100%\" height=\"100%\"></rect></svg>\n            </div>\n            \n            </div>\n\n            <div class=\"card card-3 col-12 col-md-8\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-6': cardsAmount == '2',\n                        'col-lg-4': cardsAmount == '3'}\">\n              <div class=\"circle-icon\">\n                <span class=\"wgl-icon wgl-icon3\"><a href=\"#\"><span mbr-if mbr-icon class=\"icon1 mbr-iconfont socicon mbrib-success\"></span></a></span>\n                <div class=\"card-box\">\n                    <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\">PS4/5</h4>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                        Dont be Idiot</p>\n                </div>\n                <svg class=\"wgl-dashes svg3 inner-dashed-border animated-dashes\"><rect x=\"2px\" y=\"2px\" rx=\"30px\" ry=\"30px\" width=\"100%\" height=\"100%\"></rect></svg>\n                </div>\n            </div>\n        </div>\n    </div>\n    <svg class=\"svg-1\" id=\"curve\" data-name=\"Layer 2\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1428 130.87\"><path class=\"cls-1\" d=\"M-83,345V288s158-27,262-22l104,5,138,8,300,21s245,4,281-5c0,0-9-39,33-45,0,0,8-51,58-25,0,0,48-36,61,23,0,0,27,2,28,24,0,0,163-22,163-17v90Z\" transform=\"translate(83 -214.13)\"></path></svg>\n</section>",
+          "_anchor": "features4-2",
+          "_isUserblock": true,
+          "_sourceTheme": "kidsm4",
+          "_cid": "rGsrTJGvqW",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            ".mbr-shop": {
+              "display": "table",
+              "width": "100%"
+            },
+            ".mbr-shop .row": {
+              "margin": "0",
+              "padding": "0"
+            },
+            ".mbr-shop .btn-sm": {
+              "margin": "0.2rem 0.2rem"
+            },
+            ".mbr-shop .shoppingcart-icons": {
+              "z-index": "105 !important"
+            },
+            ".mbr-shop .shop-title": {
+              "margin-bottom": "18px",
+              "padding-left": "25px",
+              "padding-right": "25px",
+              "display": "inline-block",
+              "max-width": "80%"
+            },
+            ".btn": {
+              "padding": "0.6rem 2rem",
+              "border-radius": "30px"
+            },
+            ".img_wraper img": {
+              "border-radius": "8px!important"
+            },
+            ".mbr-shop .sidebar-title": {
+              "text-align": "center",
+              "line-height": "25px",
+              "font-weight": "900"
+            },
+            ".mbr-shop .shopItemsModal_wraper": {
+              "left": "0",
+              "position": "fixed",
+              "display": "none",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              "-webkit-justify-content": "center",
+              "justify-content": "center",
+              "width": "100%",
+              "height": "100%",
+              "background-color": "rgba(87, 87, 87, 0.4)",
+              "top": "0",
+              "cursor": "pointer",
+              "z-index": "1040"
+            },
+            ".mbr-shop .card-description": {
+              "cursor": "text",
+              "display": "none"
+            },
+            ".mbr-shop .image-modal": {
+              "padding-left": "0",
+              "padding-right": "0",
+              "text-align": "center",
+              "border": "2px dashed @warningColor",
+              "border-radius": "30px",
+              "padding": "2rem"
+            },
+            ".mbr-shop .image-modal img": {
+              "max-width": "100%",
+              "max-height": "75vh"
+            },
+            ".mbr-shop .hide-modal": {
+              "display": "none"
+            },
+            ".mbr-shop .shopItemsModal": {
+              "cursor": "default",
+              "padding": "50px",
+              "width": "1000px",
+              "max-width": "100%",
+              "background-color": "#ffffff",
+              "z-index": "2000",
+              "position": "fixed"
+            },
+            ".mbr-shop .shopItemsModal p": {
+              "margin-bottom": "0"
+            },
+            ".mbr-shop .shopItemsModal ul": {
+              "margin-bottom": "0"
+            },
+            ".mbr-shop .shopItemsModal .card-description": {
+              "display": "block",
+              "width": "100%"
+            },
+            ".mbr-shop .shopItemsModal .close-modal": {
+              "content": "''",
+              "position": "absolute",
+              "top": "0",
+              "right": "0",
+              "width": "50px",
+              "height": "4px",
+              "background-color": "red",
+              "-webkit-transform": "rotate(45deg)",
+              "transform": "rotate(45deg)"
+            },
+            ".mbr-shop .shopItemsModal .close-modal:before": {
+              "content": "''",
+              "position": "absolute",
+              "top": "0",
+              "right": "0",
+              "width": "50px",
+              "height": "4px",
+              "background-color": "red",
+              "-webkit-transform": "rotate(-45deg)",
+              "transform": "rotate(-45deg)"
+            },
+            ".mbr-shop .test-overlay": {
+              "position": "absolute",
+              "width": "100%",
+              "height": "100%",
+              "background-color": "rgba(0, 0, 0, 0.5)"
+            },
+            ".mbr-shop .filter-by-pu, .mbr-shop .filter-by-pd, .mbr-shop .filter-by-d": {
+              "display": "inline-block",
+              "margin-right": "3px"
+            },
+            ".mbr-shop .sort-buttons": {
+              "padding-bottom": "0.2rem",
+              "margin-right": "0.8rem",
+              "text-align": "right"
+            },
+            ".mbr-shop .galleryItem:before": {
+              "width": "0 !important",
+              "height": "0 !important"
+            },
+            ".mbr-shop .modal-dialog": {
+              "max-width": "700px"
+            },
+            ".mbr-shop .mbr-gallery-item": {
+              "left": "0 !important",
+              "top": "0 !important",
+              "vertical-align": "top",
+              "position": "relative !important",
+              "-webkit-transform": "none !important",
+              "transform": "none !important",
+              "padding": "2rem",
+              "border": "2px dashed @warningColor",
+              "border-radius": "30px",
+              "width": "~\"calc(34% - 3rem)\""
+            },
+            ".mbr-shop .galleryItem h4, .mbr-shop .carousel-item h4": {
+              "font-style": "normal",
+              "line-height": "1",
+              "text-transform": "none",
+              "letter-spacing": "-1px",
+              "word-spacing": "0",
+              "margin-bottom": "0.3rem",
+              "padding-top": "15px",
+              "transition": "color 0.5s"
+            },
+            ".mbr-shop .galleryItem h5, .mbr-shop .carousel-item h5": {
+              "font-style": "italic",
+              "font-weight": "400",
+              "line-height": "22.36px",
+              "text-transform": "none",
+              "letter-spacing": "0px",
+              "word-spacing": "0"
+            },
+            ".mbr-shop .galleryItem p, .mbr-shop .carousel-item p": {
+              "font-style": "italic",
+              "font-weight": "400",
+              "text-transform": "none",
+              "letter-spacing": "0px",
+              "word-spacing": "0px",
+              "text-align": "center",
+              "display": "inline"
+            },
+            ".mbr-shop .item-button": {
+              "text-align": "center"
+            },
+            ".mbr-shop .modalButton": {
+              "display": "inline-block",
+              "float": "right",
+              "margin-right": "10px"
+            },
+            ".mbr-shop .modalButton.btn-success": {
+              "right": "15%"
+            },
+            ".mbr-shop .sidebar": {
+              "margin-top": "30px",
+              "position": "relative"
+            },
+            ".mbr-shop .sidebar-block": {
+              "position": "relative"
+            },
+            ".mbr-shop .sidebar-background:after": {
+              "content": "''",
+              "position": "absolute",
+              "width": "100%",
+              "height": "102%",
+              "background-color": "rgba(0, 0, 0, 0)",
+              "top": "-20px",
+              "right": "3px"
+            },
+            ".mbr-shop .bestsellers": {
+              "padding-left": "0",
+              "padding-right": "0",
+              "position": "relative",
+              "margin-bottom": "20px"
+            },
+            ".mbr-shop .bestsellers .onsale": {
+              "top": "-15px"
+            },
+            ".mbr-shop .bestsellers .price-block": {
+              "padding-top": "5px",
+              "text-align": "left",
+              "line-height": "1"
+            },
+            ".mbr-shop .bestsellers .mbr-gallery-item": {
+              "width": "100%"
+            },
+            ".mbr-shop .bestsellers .mbr-gallery-item img": {
+              "width": "80px",
+              "float": "left",
+              "margin-right": "20px"
+            },
+            ".mbr-shop .bestsellers .mbr-gallery-item h4": {
+              "text-align": "left",
+              "padding-bottom": "5px",
+              "line-height": "1",
+              "border-bottom": "1px dotted #d6d6d6"
+            },
+            ".mbr-shop .bestsellers .mbr-gallery-item h5": {
+              "text-align": "left",
+              "display": "none"
+            },
+            ".mbr-shop .bestsellers .mbr-gallery-item p": {
+              "text-align": "left"
+            },
+            ".mbr-shop .bestsellers .btn": {
+              "display": "none"
+            },
+            ".mbr-shop .bestsellers-img": {
+              "display": "inline-block",
+              "width": "80px",
+              "height": "80px",
+              "overflow": "hidden"
+            },
+            ".mbr-shop .bestsellers-title": {
+              "display": "inline-block"
+            },
+            ".mbr-shop .onsale": {
+              "position": "absolute",
+              "top": "5px",
+              "right": "5px",
+              "display": "block",
+              "transition": "color .3s ease",
+              "text-align": "center",
+              "z-index": "0",
+              "height": "30px",
+              "line-height": "30px",
+              "padding": "0 15px",
+              "background": "@saleBg",
+              "border-radius": "30px",
+              "font-weight": "400",
+              "font-style": "normal",
+              "text-transform": "none",
+              "letter-spacing": "0px",
+              "color": "#fff"
+            },
+            ".mbr-shop .mbr-gallery-item__hided": {
+              "display": "none"
+            },
+            ".mbr-shop .mbr-gallery-item__hided h4, .mbr-shop .mbr-gallery-item__hided h5, .mbr-shop .mbr-gallery-item__hided p": {
+              "display": "none"
+            },
+            ".mbr-shop .mbr-gallery-item__hided .btn": {
+              "display": "none"
+            },
+            ".mbr-shop .galleryItem .price-block": {
+              "display": "block",
+              "margin-bottom": "8px"
+            },
+            ".mbr-shop .galleryItem .price-block span": {
+              "font-style": "normal",
+              "font-weight": "700",
+              "line-height": "1",
+              "text-transform": "none",
+              "letter-spacing": "-1px",
+              "word-spacing": "0"
+            },
+            ".mbr-shop .mbr-gallery-filter": {
+              "padding-left": "0",
+              "text-align": "left",
+              "padding-top": "0"
+            },
+            ".mbr-shop .mbr-gallery-filter ul li": {
+              "position": "relative",
+              "padding": "7px 0 7px 0px",
+              "border-bottom": "1px dotted #d6d6d6",
+              "margin": "0",
+              "font-style": "normal",
+              "font-weight": "400",
+              "line-height": "24.99px",
+              "text-transform": "none",
+              "letter-spacing": "0px",
+              "word-spacing": "0",
+              "direction": "ltr",
+              "border": "none",
+              "display": "list-item",
+              "text-align": "left",
+              "transition": "all 0.3s ease-out",
+              "cursor": "pointer"
+            },
+            ".mbr-shop .mbr-gallery-filter ul li.active": {
+              "background-color": "transparent",
+              "font-weight": "bold"
+            },
+            ".mbr-shop .mbr-gallery-filter ul li:hover": {
+              "color": "@primaryColor"
+            },
+            ".mbr-shop .range-slider": {
+              "padding-bottom": "25px",
+              "text-align": "center"
+            },
+            ".mbr-shop .filter-cost": {
+              "display": "block",
+              "vertical-align": "middle",
+              "max-width": "250px",
+              "text-align": "left",
+              "position": "relative",
+              "margin-bottom": "30px"
+            },
+            ".mbr-shop .filter-cost p": {
+              "margin-bottom": "10px",
+              "font-size": "16px",
+              "line-height": "21px",
+              "color": "@primaryColor",
+              "font-weight": "bold"
+            },
+            ".mbr-shop .price-controls": {
+              "position": "relative",
+              "height": "36px",
+              "margin-bottom": "30px",
+              "border": "2px solid @warningColor",
+              "border-radius": "2px",
+              "font-size": "0"
+            },
+            ".mbr-shop .price-controls label": {
+              "display": "inline-block",
+              "width": "50%",
+              "font-size": "14px",
+              "line-height": "32px",
+              "color": "@warningColor",
+              "font-weight": "normal",
+              "cursor": "pointer",
+              "margin-bottom": "0"
+            },
+            ".mbr-shop .price-controls label.min-price": {
+              "border-right": "2px solid @warningColor"
+            },
+            ".mbr-shop .price-controls input": {
+              "width": "100%",
+              "background-color": "#ffffff",
+              "border": "none",
+              "line-height": "31px",
+              "height": "31px",
+              "text-align": "center",
+              "-webkit-user-select": "none",
+              "-ms-user-select": "none",
+              "user-select": "none",
+              "color": "@infoColor"
+            },
+            ".mbr-shop .range-controls": {
+              "position": "relative"
+            },
+            ".mbr-shop .range-controls .scale": {
+              "width": "100%",
+              "height": "2px",
+              "background-color": "rgba(190, 190, 190, 0.3)"
+            },
+            ".mbr-shop .range-controls .bar": {
+              "margin-left": "0",
+              "width": "100%",
+              "height": "2px",
+              "background-color": "@warningColor"
+            },
+            ".mbr-shop .toggle": {
+              "position": "absolute",
+              "top": "-9px",
+              "width": "4px",
+              "height": "4px",
+              "border": "8px solid @warningColor",
+              "border-radius": "100%",
+              "box-sizing": "content-box",
+              "background-color": "@warningColor",
+              "cursor": "pointer"
+            },
+            ".mbr-shop .toggle:hover, .mbr-shop .toggle:active": {
+              "background-color": "#c0a375"
+            },
+            ".mbr-shop .min-toggle": {
+              "left": "0"
+            },
+            ".mbr-shop .max-toggle": {
+              "right": "0"
+            },
+            ".mbr-shop .hided-by-price": {
+              "display": "none"
+            },
+            ".mbr-shop .text-modal": {
+              "padding-right": "30px",
+              "padding-left": "30px"
+            },
+            ".mbr-shop .text-modal .item-button": {
+              "text-align": "left !important"
+            },
+            ".mbr-shop .text-modal .price-block": {
+              "line-height": "1",
+              "border-bottom": "1px dotted #d6d6d6"
+            },
+            ".mbr-shop .text-modal .price-block p": {
+              "display": "inline"
+            },
+            ".mbr-shop .text-modal .price-block span": {
+              "display": "inline",
+              "font-weight": "700",
+              "padding": "10px 0 20px 0"
+            },
+            ".mbr-shop .text-modal .card-description": {
+              "padding-top": "20px",
+              "display": "block",
+              "font-size": "16px",
+              "line-height": "24px",
+              "margin-bottom": "50px"
+            },
+            ".mbr-shop .modal-control-panel": {
+              "padding-right": "0"
+            },
+            ".mbr-shop .modal-cb": {
+              "display": "inline-block",
+              "float": "right",
+              "margin-right": "10px",
+              "margin-left": "10px"
+            },
+            ".mbr-shop .shopItemsModalBg": {
+              "width": "100%",
+              "height": "100%"
+            },
+            ".mbr-shop .close-modal-wrapper": {
+              "cursor": "pointer",
+              "width": "40px",
+              "height": "40px",
+              "position": "absolute",
+              "top": "10px",
+              "right": "10px"
+            },
+            ".mbr-shop .close-modal-wrapper:after": {
+              "content": "\"\"",
+              "position": "absolute",
+              "width": "40px",
+              "height": "3px",
+              "background-color": "#cccccc",
+              "top": "50%",
+              "right": "5%",
+              "-webkit-transform": "rotate(-45deg)",
+              "transform": "rotate(-45deg)"
+            },
+            ".mbr-shop .close-modal-wrapper:before": {
+              "content": "\"\"",
+              "position": "absolute",
+              "width": "3px",
+              "height": "40px",
+              "background-color": "#cccccc",
+              "right": "50%",
+              "top": "5%",
+              "-webkit-transform": "rotate(-45deg)",
+              "transform": "rotate(-45deg)"
+            },
+            ".mbr-shop .closeModal": {
+              "position": "absolute",
+              "top": "0",
+              "right": "0"
+            },
+            ".mbr-shop .galleryItem .sidebar_wraper": {
+              "text-align": "center"
+            },
+            ".mbr-shop .shopItemsModal .sidebar_wraper": {
+              "text-align": "left"
+            },
+            ".mbr-shop .shopItemsModal .onsale": {
+              "top": "10px",
+              "right": "10px",
+              "border": "1px solid #e7e7e7"
+            },
+            ".mbr-shop .shop-items .onsale, .mbr-shop .bestseller-block .onsale": {
+              "font-size": "15px !important"
+            },
+            ".mbr-shop .item_overlay": {
+              "position": "absolute",
+              "width": "100%",
+              "height": "100%",
+              "z-index": "99",
+              "background": "transparent"
+            },
+            ".mbr-shop .style_overlay": {
+              "position": "absolute",
+              "width": "100%",
+              "height": "100%"
+            },
+            ".mbr-shop .price-range": {
+              "display": "inline-block"
+            },
+            ".mbr-shop .price-range-reset": {
+              "display": "inline-block"
+            },
+            ".mbr-shop .bestsellers .item-button": {
+              "display": "none !important"
+            },
+            ".mbr-shop .range-slider h4": {
+              "margin-bottom": "15px"
+            },
+            ".mbr-shop .mbr-gallery-filter ul": {
+              "padding-left": "0px",
+              "display": "inline-block",
+              "list-style": "none",
+              "margin-bottom": "0px"
+            },
+            ".mbr-shop .categories:after": {
+              "content": "\"\"",
+              "display": "table",
+              "clear": "both"
+            },
+            "@media (min-width: 767px) and (max-width: 1100px)": {
+              ".mbr-shop .col-md-9": {
+                "width": "100%"
+              },
+              ".mbr-shop .col-md-3": {
+                "width": "100%"
+              },
+              ".mbr-shop .sidebar-background:after": {
+                "top": "0"
+              },
+              ".mbr-shop .bestseller-block": {
+                "width": "100%",
+                "margin": "0",
+                "display": "inline-block",
+                "float": "left",
+                "padding-top": "15px"
+              },
+              ".mbr-shop .range-slider": {
+                "width": "49%",
+                "margin": "0",
+                "display": "inline-block",
+                "float": "right",
+                "padding-top": "15px"
+              },
+              ".mbr-shop .bestsellers": {
+                "width": "100%"
+              },
+              ".mbr-shop .bestsellers .mbr-gallery-item": {
+                "width": "49%",
+                "display": "inline-block"
+              },
+              ".mbr-shop .sidebar-categories": {
+                "text-align": "center !important",
+                "width": "49%",
+                "margin": "0",
+                "display": "inline-block",
+                "padding-top": "15px"
+              },
+              ".mbr-shop .price-range": {
+                "max-width": "250px",
+                "text-align": "center"
+              },
+              ".clearfix:after": {
+                "content": "\"\"",
+                "display": "table",
+                "clear": "both"
+              }
+            },
+            "@media (max-width: 991px) and (min-width: 768px)": {
+              ".mbr-shop .mbr-gallery-item": {
+                "width": "33%"
+              }
+            },
+            "@media (max-width: 500px)": {
+              ".mbr-shop .shopItemsModal": {
+                "padding": "50px 10px 10px 10px"
+              },
+              ".mbr-shop .shop-title": {
+                "max-width": "100%"
+              },
+              ".mbr-shop .mbr-gallery-item": {
+                "width": "100%"
+              }
+            },
+            "@media (max-width: 1200px)": {
+              ".mbr-shop .sort-buttons": {
+                "text-align": "center",
+                "margin-right": "0 !important"
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".mbr-shop .image-modal": {
+                "text-align": "center"
+              },
+              ".mbr-shop .image-modal img": {
+                "max-height": "50vh",
+                "width": "auto",
+                "max-width": "100%"
+              },
+              ".mbr-shop .shopItemsModal": {
+                "top": "15%",
+                "bottom": "70px",
+                "left": "10%",
+                "width": "80%"
+              },
+              ".mbr-shop .shopItemsModal .image-modal": {
+                "padding-right": "0"
+              },
+              ".mbr-shop .sidebar-background:after": {
+                "top": "-1%"
+              },
+              "padding-top": "(@paddingTop * 10px)",
+              "padding-bottom": "(@paddingBottom * 10px)",
+              ".mbr-shop .mbr-gallery-item": {
+                "margin": "1rem 0rem"
+              }
+            },
+            "@media (max-width: 1100px)": {
+              ".mbr-shop .shopItemsModal": {
+                "max-height": "85vh",
+                "width": "90%",
+                "left": "5%",
+                "margin-left": "0"
+              },
+              ".mbr-shop .sort-buttons": {
+                "margin-right": "21px"
+              },
+              ".mbr-shop .sidebar-background:after": {
+                "right": "0",
+                "width": "100%"
+              },
+              ".mbr-shop .text-modal .card-description": {
+                "width": "100%"
+              },
+              ".mbr-shop .text-modal .price-block": {
+                "width": "100%"
+              },
+              ".mbr-shop .text-modal h4": {
+                "padding-top": "30px"
+              }
+            },
+            ".shopItemsModal_wraper .mbr-section-btn": {
+              "display": "block !important"
+            },
+            ".range-slider .mbr-section-btn": {
+              "margin": "0"
+            },
+            ".oldprice": {
+              "color": "#d5d5d5",
+              "padding-left": ".8rem!important",
+              "text-decoration": "line-through"
+            },
+            "& when (@shop__showPriceRange)": {
+              ".range-controls": {
+                "display": "block !important"
+              }
+            },
+            "& when (@shop__showSortButtons)": {
+              ".sort-buttons": {
+                "display": "block !important"
+              }
+            },
+            "@media screen and (~'-ms-high-contrast: active'), (~'-ms-high-contrast: none')": {
+              ".shopItemsModal.row": {
+                "position": "absolute !important",
+                "top": "calc(50% ~'-' 300px) !important",
+                "left": "calc(50% ~'-' 500px) !important"
+              }
+            },
+            "LI": {
+              "color": "@infoColor"
+            },
+            ".sidebar-title": {
+              "color": "#12265a",
+              "background-size": "100% 0.521em",
+              "display": "inline-block",
+              "margin": "0 -12px",
+              "padding": "0 12px",
+              "background-image": "linear-gradient(to top, fade(@warningColor, 30%), fade(@warningColor, 30%))",
+              "background-repeat": "no-repeat",
+              "background-position": "0% 74%",
+              "text-transform": "uppercase"
+            },
+            ".item-title": {
+              "text-align": "left",
+              "color": "#12265a"
+            },
+            ".shop-item-price,.price-block": {
+              "text-align": "left",
+              "color": "#45b3df"
+            },
+            "@media (max-width: 576px)": {
+              ".filter-cost": {
+                "max-width": "100%!important"
+              },
+              ".range-slider, .categories, .bestseller-block": {
+                "text-align": "center"
+              }
+            },
+            ".btn-primary": {
+              "background-color": "@warningColor !important",
+              "border": "none !important"
+            },
+            ".btn-primary-outline": {
+              "border-color": "@warningColor !important",
+              "color": "@warningColor !important"
+            },
+            ".btn-primary-outline:hover": {
+              "color": "#fff !important",
+              "border-color": "@primaryColor !important"
+            },
+            ".disableSortButton": {
+              "border-radius": "30px"
+            },
+            ".wrapper-cards-button": {
+              "position": "absolute",
+              "left": "5%",
+              "opacity": "0",
+              "transition": "0.5s"
+            },
+            ".mbr-gallery-item:hover .wrapper-cards-button": {
+              "opacity": "1"
+            },
+            ".container-fluid": {
+              "max-width": "1200px"
+            },
+            ".btn-primary-outline:active": {
+              "color": "@warningColor !important"
+            },
+            ".wrapper-shop-items": {
+              "order": "1"
+            },
+            ".bestseller-block": {
+              "text-align": "center !important"
+            },
+            ".sidebar-categories": {
+              "text-align": "center !important"
+            },
+            ".shopItemsModal": {
+              "border-radius": "30px"
+            },
+            "@media (min-width: 767px)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)",
+              ".mbr-shop .mbr-gallery-item": {
+                "margin": "1.5rem 1.18rem"
+              }
+            },
+            "a:hover": {
+              "font-weight": "600"
+            }
+          },
+          "_name": "shop1",
+          "_customHTML": "<section class=\"mbr-gallery\" group=\"Shops\" plugins=\"mobirise-shop,Gallery\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <!-- <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked> -->\n        <input type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"4\" inline>\n        <input type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"4\" inline>\n        <input type=\"color\" title=\"On Sale Bg\" name=\"saleBg\" value=\"#d4067a\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n\n        <input type=\"shop\" title=\"Shop\" name=\"shop\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container-fluid\">\n        <div mbr-shop=\"shop\" class=\"mbr-shop\" show-sidebar show-buttons sorting></div>\n    </div>\n\n</section>",
+          "_cid": "rHdEdJJji8",
+          "_anchor": "shop1-n",
+          "_protectedParams": [
+            "shop__showSidebar",
+            "shop__reverseSidebar",
+            "shop__showSortButtons",
+            "shop__showBestSellers",
+            "shop__showPriceRange",
+            "shop__showTags",
+            "text_all",
+            "sidebar1",
+            "sidebar2",
+            "sidebar3",
+            "shop__filtersTextStyle",
+            "buttons_default_class",
+            "filter_by_d",
+            "filter_by_pu",
+            "filter_by_pd",
+            "price_range",
+            "price_range_reset",
+            "shop"
+          ],
+          "_global": false,
+          "_once": false,
+          "_params": {
+            "shop__showSidebar": true,
+            "shop__reverseSidebar": true,
+            "shop__showSortButtons": true,
+            "shop__showBestSellers": true,
+            "shop__showPriceRange": true,
+            "shop__showTags": false,
+            "text_all": "All",
+            "sidebar1": "Best Sellers",
+            "sidebar2": "Price Range",
+            "sidebar3": "Filter",
+            "shop__filtersTextStyle": "display-7",
+            "filter_by_d": "<a class=\"btn btn-sm btn-primary disableSortButton\" href=\"\">Default sorting</a>",
+            "filter_by_pu": "<a class=\"btn btn-sm btn-primary-outline disableSortButton\" href=\"\">Price: low to high</a>",
+            "filter_by_pd": "<a class=\"btn btn-sm btn-primary-outline disableSortButton\" href=\"\">Price: high to low</a>",
+            "price_range": "<a class=\"btn btn-sm btn-primary\" data-app-btn=\"true\" href=\"\" data-toolbar=\"-mbrBtnMove,-mbrLink,-mbrBtnRemove,-mbrFonts,-mbrFontSize,-mbrBtnAdd,-iconFont\">Filter</a>",
+            "price_range_reset": "<a class=\"btn btn-sm btn-secondary\" data-app-btn=\"true\" href=\"\">Show all</a>",
+            "shop": [
+              {
+                "tags": "Awesome",
+                "bestSeller": false,
+                "onSale": false,
+                "oldPrice": true,
+                "itemTitle": "GTA V&nbsp;",
+                "itemDescription": "<p><b>Grand Theft Auto V</b><br></p><p> </p><p><br></p><p>Grand Theft Auto V is an action-adventure game where you can roam the open world as much as you wish and complete the story missions which additionally unlock gameplay mechanics. You decide how you’re going to lead your character, either getting to the top of the richest people in Los Santos or to the very bottom with the gangs and organized crime.</p>",
+                "itemPriceTitle": "From: ",
+                "itemPrice": "$21.99",
+                "oldPriceValue": "$25.99",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amount=21.99&item_name=GTA%20V%20PC%20%7C%20XBOX%20%7C%20PS&currency_code=USD&add=1\" data-app-placeholder=\"Type Text\" class=\"btn display-7 btn-warning-outline\">Buy Now</a>",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">Buy Now</a>",
+                "image": "@PROJECT_PATH@/assets/images/gta_5_icon_2__by_agentromi_d5wofch-fullview-527x560.png",
+                "thumb": "@PROJECT_PATH@/assets/images/gta-5-icon-2-by-agentromi-d5wofch-fullview-527x560-527x560.png",
+                "customStyle5": "display-5",
+                "customStyle7": "display-7",
+                "customStyleSale": "display-7",
+                "customStyleTags": "display-4",
+                "caption": "Type caption here",
+                "active": false,
+                "alt": ""
+              },
+              {
+                "tags": "Wonderful",
+                "bestSeller": false,
+                "onSale": false,
+                "oldPrice": true,
+                "itemTitle": "PUBG",
+                "itemDescription": "PlayerUnkown’s Battlegrounds (PUBG), which stands for PlayerUnknown's Battlegrounds, has been a worldwide phenomenon for quite some time. When it comes to the gaming industry, it gained extreme popularity throughout the community of gamers thanks to its battle royale gameplay. Following the success of the pc version, the developers decided to produce a mobile version of PUBG. In 2018 Tencent games released the PUBG Corporation game designed for mobile devices with operating systems such as Android or iOS. The game is free to play, as the player can easily download it from the store on their phone. However, there are optional payments that can make the player love the game even more!<br>",
+                "itemPriceTitle": "From: ",
+                "itemPrice": "$21.99",
+                "oldPriceValue": "$28.99",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amount=21.99&item_name=PUBG%20PC%20%7C%20XBOX%20%7C%20PS&currency_code=USD&add=1\" data-app-placeholder=\"Type Text\" class=\"btn btn-primary display-7\">Buy Now</a>",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">Buy Now</a>",
+                "image": "@PROJECT_PATH@/assets/images/pubg-circle-battlegrounds-photo-23-320x320.png",
+                "thumb": "@PROJECT_PATH@/assets/images/pubg-circle-battlegrounds-photo-23-320x320-320x320.png",
+                "customStyle5": "display-5",
+                "customStyle7": "display-7",
+                "customStyleSale": "display-7",
+                "customStyleTags": "display-4",
+                "caption": "Type caption here",
+                "active": false,
+                "alt": ""
+              },
+              {
+                "tags": "Creative",
+                "bestSeller": false,
+                "onSale": false,
+                "oldPrice": true,
+                "itemTitle": "FARCRY 5",
+                "itemDescription": "Far Cry 5 is a 2018 First-person shooter, developed by Ubisoft Montreal and Ubisoft Toronto and published by Ubisoft. It is the successor to 2014's Far Cry 4, and the fifth main installment in the Far Cry series. Set in Hope County, a fictional region of Montana, United States, the game revolves around the Project at Eden's Gate, a doomsday cult that has taken over the county at the command of its charismatic and powerful leader, Joseph Seed. Players control an unnamed junior deputy sheriff who becomes trapped in Hope County and must work alongside various resistance factions to liberate the region from the despotic rule of the Seeds and Eden's Gate. Gameplay focuses on combat and exploration; players battle enemy soldiers and dangerous wildlife using a wide array of weapons. The game features many elements found in role-playing games, such as a branching storyline and side quests. The game also features a map editor, a co-operative multiplayer mode, and a competitive multiplayer mode.&nbsp;",
+                "itemPriceTitle": "From: ",
+                "itemPrice": "$21.99",
+                "oldPriceValue": "$30",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amount=21.99&item_name=FARCRY%205%20PC%20%7C%20XBOX%20%7C%20PS&currency_code=USD&add=1\" data-app-placeholder=\"Type Text\" class=\"btn btn-primary display-7\">Buy Now</a>",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">Buy Now</a>",
+                "image": "@PROJECT_PATH@/assets/images/far-cry-5-png-transparent-image-png-clipart-512x512.png",
+                "thumb": "@PROJECT_PATH@/assets/images/far-cry-5-png-transparent-image-png-clipart-512x512-512x512.png",
+                "customStyle5": "display-5",
+                "customStyle7": "display-7",
+                "customStyleSale": "display-7",
+                "customStyleTags": "display-4",
+                "caption": "Type caption here",
+                "active": false,
+                "alt": ""
+              },
+              {
+                "tags": "Awesome",
+                "bestSeller": false,
+                "onSale": false,
+                "oldPrice": true,
+                "itemTitle": "PAYDAY 2",
+                "itemDescription": "If you want to set the DC on fire, then you cannot work alone. This is why the new CRIMENET created for Payday 2 has come to help you with your \"noble\" task. The new CRIMENET network offers a huge range of dynamic contracts and players are free to choose anything from small-time convenience store hits or kidnappings to big league cyber-crime or emptying out major bank vaults for that epic PAYDAY. You start as a relatively small fish, robbing any place possible. However, soon enough you are going to find yourself in the position of a leader of a huge crime syndicate. Then you will be able to attack the biggest banks in the DC. By the way, while you are in DC then maybe you want to participate in political games? Because why not, don't you think?",
+                "itemPriceTitle": "From: ",
+                "itemPrice": "$21.99",
+                "oldPriceValue": "$58",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amount=21.99&item_name=Payday%202%20PC%20%7C%20XBOX%20%7C%20PS&currency_code=USD&add=1\" data-app-placeholder=\"Type Text\" class=\"btn btn-primary display-7\">Buy Now</a>",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">Buy Now</a>",
+                "image": "@PROJECT_PATH@/assets/images/payday2-860x635.png",
+                "thumb": "@PROJECT_PATH@/assets/images/payday2-860x635-800x591.png",
+                "customStyle5": "display-5",
+                "customStyle7": "display-7",
+                "customStyleSale": "display-7",
+                "customStyleTags": "display-4",
+                "caption": "Type caption here",
+                "active": true,
+                "alt": ""
+              },
+              {
+                "tags": "Responsive",
+                "bestSeller": false,
+                "onSale": false,
+                "oldPrice": true,
+                "itemTitle": "Overwatch&nbsp;",
+                "itemDescription": "Overwatch is a 2016 first-person shooter multiplayer video game for PC, developed and published by Blizzard Entertainment. In the game, players take control of one of several characters, called „heroes” and complete various missions in teamwork-based gameplay. Overwatch Legendary Edition provides the players with additional content, such as new skins for their characters.",
+                "itemPriceTitle": "From: ",
+                "itemPrice": "$21.99",
+                "oldPriceValue": "$45",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amount=21.99&item_name=OVERWATCH%20PC%20%7C%20XBOX%20%7C%20PS&currency_code=USD&add=1\" data-app-placeholder=\"Type Text\" class=\"btn btn-primary display-7\">Buy Now</a>",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">Buy Now</a>",
+                "image": "@PROJECT_PATH@/assets/images/daq3now-43676080-876f-44e7-a449-9ef498f3168a-512x512.png",
+                "thumb": "@PROJECT_PATH@/assets/images/daq3now-43676080-876f-44e7-a449-9ef498f3168a-512x512-512x512.png",
+                "customStyle5": "display-5",
+                "customStyle7": "display-7",
+                "customStyleSale": "display-7",
+                "customStyleTags": "display-4",
+                "caption": "Type caption here",
+                "active": false,
+                "alt": ""
+              },
+              {
+                "tags": "Creative",
+                "bestSeller": false,
+                "onSale": false,
+                "oldPrice": true,
+                "itemTitle": "Flight simulator 2020",
+                "itemDescription": "Microsoft Flight simulator 2020 is a simulator video game for Xbox One, developed by Asobo Studio and published by Xbox Game Studios. The game is the fourth installment in Microsoft’s series of flight simulators. The game features 20 planes that the player can pilot, and 30 airports, located in various locations of the world.\n<div>\n</div><div>The gameplay focuses on giving the player the most realistic experience of flying a plane by faithfully representing the flight mechanics, changing weather conditions, etc. Microsoft Flight Simulator 2020 received positive initial reviews, with critics praising the detailed gameplay mechanics, realistic world graphics, and a variety of machines available to the player.</div>",
+                "itemPriceTitle": "From: ",
+                "itemPrice": "$100.99",
+                "oldPriceValue": "$130",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amount=100.99&item_name=Flight%20simulator%20PC%20%7C%20XBOX%20%7C%20PS&currency_code=USD&add=1\" data-app-placeholder=\"Type Text\" class=\"btn btn-primary display-7\">Buy Now</a>",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">Buy Now</a>",
+                "image": "@PROJECT_PATH@/assets/images/dem43ey-4a9c75dd-c91f-49a6-8d2e-781b73618d39-512x512.png",
+                "thumb": "@PROJECT_PATH@/assets/images/dem43ey-4a9c75dd-c91f-49a6-8d2e-781b73618d39-512x512-512x512.png",
+                "customStyle5": "display-5",
+                "customStyle7": "display-7",
+                "customStyleSale": "display-7",
+                "customStyleTags": "display-4",
+                "caption": "Type caption here",
+                "active": false,
+                "alt": ""
+              },
+              {
+                "tags": "Animated",
+                "bestSeller": false,
+                "onSale": false,
+                "oldPrice": true,
+                "itemTitle": "F-Horizon 5",
+                "itemDescription": "Forza Horizon 5 is the latest installment of the open-world driving simulator games developed by Playground Games.  Forza Horizon 5 brings back the open-world racing experience like never before. The roads of Mexico are open for you to drive the best cars in the world. Visit bustling cities, lush jungles, and arid deserts and experience the changing weather conditions and how they affect your drive. See the seasons change around you as you complete races and challenges, or drive casually and take in the highly detailed sights of the Mexican landscapes.&nbsp;",
+                "itemPriceTitle": "From: ",
+                "itemPrice": "$100.99",
+                "oldPriceValue": "$146",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amount=100.99&item_name=HORIZON%205%20PC%20%7C%20XBOX%20%7C%20PS&currency_code=USD&add=1\" data-app-placeholder=\"Type Text\" class=\"btn btn-primary display-7\">Buy Now</a>",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">Buy Now</a>",
+                "image": "@PROJECT_PATH@/assets/images/dequkse-9f5ed623-8829-424d-a794-59d5ef0f6f9e-512x512.png",
+                "thumb": "@PROJECT_PATH@/assets/images/dequkse-9f5ed623-8829-424d-a794-59d5ef0f6f9e-512x512-512x512.png",
+                "customStyle5": "display-5",
+                "customStyle7": "display-7",
+                "customStyleSale": "display-7",
+                "customStyleTags": "display-4",
+                "caption": "Type caption here",
+                "active": false,
+                "alt": ""
+              },
+              {
+                "tags": "Awesome",
+                "bestSeller": false,
+                "onSale": false,
+                "oldPrice": true,
+                "itemTitle": "RAINBOW 6",
+                "itemDescription": "Tom Clancy's Rainbow Six Siege is a game that enjoys a well-deserved reputation on the market. This is a first-person shooter, in which we can compete with other players from around the world in exciting games and constantly develop our skills. The game even has the Rainbow Six Siege Pro League, which can be watched, in which the best players from around the world compete against each other.",
+                "itemPriceTitle": "From: ",
+                "itemPrice": "$100.99",
+                "oldPriceValue": "$170",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amount=100.99&item_name=RAINBOW%20SIX%20PC%20%7C%20XBOX%20%7C%20PS&currency_code=USD&add=1\" data-app-placeholder=\"Type Text\" class=\"btn btn-primary display-7\">Buy Now</a>",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">Buy Now</a>",
+                "image": "@PROJECT_PATH@/assets/images/rainbow_six_siege_png_icon_by_s7_by_sidyseven_d9iezrc-fullview-512x512.png",
+                "thumb": "@PROJECT_PATH@/assets/images/rainbow-six-siege-png-icon-by-s7-by-sidyseven-d9iezrc-fullview-512x512-512x512.png",
+                "customStyle5": "display-5",
+                "customStyle7": "display-7",
+                "customStyleSale": "display-7",
+                "customStyleTags": "display-4",
+                "caption": "Type caption here",
+                "active": false,
+                "alt": ""
+              }
+            ]
+          }
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when (@bg-type = 'color')": {
+              "background": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".content-row": {
+              "& when (@mediaLeft)": {
+                "-webkit-flex-direction": "row-reverse",
+                "flex-direction": "row-reverse"
+              }
+            },
+            "h4": {
+              "margin": "0",
+              "display": "inline-block"
+            },
+            ".btn-text": {
+              "margin": "0.3rem",
+              "margin-bottom": "2rem",
+              "padding": "0.6rem 2rem!important"
+            },
+            ".btn-sm": {
+              "padding": "0.6rem 4.4rem"
+            },
+            ".plan-body": {
+              "position": "relative",
+              "padding-bottom": "2rem",
+              "border-radius": "0px 0px 30px 30px"
+            },
+            ".plan-header": {
+              "padding-top": "4rem",
+              "padding-bottom": "3rem",
+              "padding-left": "1rem",
+              "padding-right": "1rem",
+              "background-color": "@primaryColor",
+              "border-radius": "30px 30px 0 0",
+              "position": "relative"
+            },
+            ".plan-wrapper": {
+              "box-shadow": "0 0 15px 0 rgba(0, 0, 0, 0.1)"
+            },
+            ".list-group-item": {
+              "font-weight": "900",
+              "padding-bottom": "0.3rem"
+            },
+            ".plan": {
+              "word-break": "break-word",
+              "position": "relative",
+              ".list-group-item": {
+                "position": "relative",
+                "-webkit-justify-content": "center",
+                "justify-content": "center",
+                "border": "0"
+              },
+              "padding": "0",
+              "margin": "1rem"
+            },
+            ".plan-header, .plan-body": {
+              "background-color": "#fff"
+            },
+            ".price-value": {
+              "font-weight": "700",
+              "vertical-align": "top"
+            },
+            "@media (max-width: 767px)": {
+              ".price-figure": {
+                "font-size": "3rem"
+              },
+              "padding-top": "(@paddingTop * 5px)",
+              "padding-bottom": "(@paddingBottom * 5px)",
+              ".container-fluid": {
+                "padding": "0 1rem"
+              },
+              ".plan": {
+                "padding": "0 1rem"
+              },
+              ".plan2": {
+                "margin-top": "3rem"
+              },
+              ".mbr-text": {
+                "text-align": "left"
+              }
+            },
+            ".color1": {
+              "color": "#fff"
+            },
+            ".color2": {
+              "color": "#fff"
+            },
+            ".container-fluid": {
+              "max-width": "1200px"
+            },
+            ".price1": {
+              "background-color": "lighten(@primaryColor, 10%)"
+            },
+            ".price2": {
+              "background-color": "lighten(@warningColor, 5%)"
+            },
+            ".btn": {
+              "margin": "0",
+              "position": "relative",
+              "padding": "0.7rem 2.4rem"
+            },
+            ".inner-dashed-border": {
+              "stroke": "#ffffff",
+              "position": "absolute",
+              "left": "0",
+              "top": "0",
+              "width": "100%",
+              "height": "100%",
+              "pointer-events": "none",
+              "animation": "dashed_border_running 20s linear infinite both",
+              "animation-play-state": "paused",
+              "stroke-width": "2",
+              "stroke-dasharray": "9, 5",
+              "stroke-dashoffset": "0",
+              "stroke-linecap": "round",
+              "fill": "none",
+              "transition": "0.4s"
+            },
+            ".button-svg:hover .inner-dashed-border": {
+              "animation-play-state": "running",
+              "stroke": "#ffffff"
+            },
+            "@keyframes dashed_border_running": {
+              "100%": {
+                "stroke-dashoffset": "-1000"
+              }
+            },
+            "rect": {
+              "position": "absolute",
+              "width": "92%"
+            },
+            ".mbr-section-btn": {
+              "position": "absolute",
+              "bottom": "0",
+              "left": "50%",
+              "transform": "translate(-50%, 50%)"
+            },
+            ".price-term1": {
+              "color": "lighten(@primaryColor, -5%)"
+            },
+            ".price-term2": {
+              "color": "lighten(@warningColor, -5%)"
+            },
+            ".circle-icon": {
+              "margin-bottom": "1.7rem",
+              "display": "block",
+              "width": "100%",
+              "color": "#fff"
+            },
+            ".wgl-icon": {
+              "border-radius": "50%",
+              "width": "30px",
+              "height": "30px",
+              "margin-right": "1rem",
+              "position": "relative"
+            },
+            ".wgl-icon1": {
+              "background-color": "@IconColor"
+            },
+            ".icon1": {
+              "font-size": "1rem",
+              "font-weight": "900",
+              "color": "#fff",
+              "position": "absolute",
+              "top": "8px",
+              "left": "8px"
+            },
+            ".mbr-text": {
+              "margin-top": "2rem",
+              "margin-bottom": "2rem"
+            },
+            ".left-wrapper": {
+              "margin-top": "2rem"
+            },
+            ".icon-name": {
+              "position": "absolute",
+              "display": "flex",
+              "justify-content": "center",
+              "align-items": "center",
+              "background": "@secondaryColor",
+              "border-radius": "20px",
+              "bottom": "0",
+              "left": "50%",
+              "transform": "translate(-50%, 50%)",
+              "z-index": "1",
+              "padding": "0.5rem 1rem"
+            },
+            ".mbr-iconfont2": {
+              "color": "#fff",
+              "font-weight": "900",
+              "margin-right": "0.5rem"
+            },
+            ".card-title2": {
+              "font-weight": "900",
+              "font-family": "'Nunito', sans-serif",
+              "line-height": "1",
+              "color": "#fff"
+            },
+            ".plan-list": {
+              "padding": "2.5rem 0rem"
+            },
+            ".mbr-section-title": {
+              "background-size": "100% 0.521em",
+              "display": "inline",
+              "margin": "0 -12px",
+              "padding": "0 12px",
+              "background-image": "linear-gradient(to top, fade(#ffffff, 30%), fade(#ffffff, 30%))",
+              "background-repeat": "no-repeat",
+              "background-position": "0% 74%"
+            },
+            ".svg-card": {
+              "position": "absolute",
+              "top": "0",
+              "width": "90%",
+              "left": "16px"
+            },
+            ".svg-card path": {
+              "fill": "@LineColor"
+            },
+            "@media (min-width: 767px) and (max-width: 992px)": {
+              ".plan2": {
+                "margin-top": "3rem"
+              },
+              ".container-fluid": {
+                "padding": "0 1.8rem"
+              }
+            },
+            "@media (min-width: 767px)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)",
+              ".plan-wrapper1": {
+                "margin-top": "-3rem"
+              }
+            },
+            "@media (min-width: 992px)": {
+              ".left-wrapper": {
+                "padding-left": "4rem"
+              }
+            },
+            ".svg-2": {
+              "position": "absolute",
+              "top": "0"
+            },
+            ".svg-2 path": {
+              "fill": "@LineColor2"
+            },
+            ".svg-3": {
+              "position": "absolute",
+              "bottom": "0"
+            },
+            ".svg-3 path": {
+              "fill": "@LineColor2"
+            },
+            ".svg1": {
+              "position": "absolute",
+              "padding": "2px",
+              "rect": {
+                "width": "~\"calc(100% - 4px)\"",
+                "height": "~\"calc(100% - 4px)\""
+              }
+            },
+            ".circle-icon > *": {
+              "display": "inline-block",
+              "vertical-align": "middle"
+            },
+            ".list-group": {
+              "color": "#12265a"
+            }
+          },
+          "_name": "pricing-tables1",
+          "_customHTML": "<section group=\"Pricing Tables\" class=\"pricing02\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background':bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input inline type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"11\">\n        <input inline type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"10\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Plan Buttons\" name=\"showButtons\" checked>\n        <header>Additional</header>\n        <select title=\"Items Count 1\" name=\"itemsCount1\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected>2</option>\n        </select>\n        <select title=\"Items Count 2\" name=\"itemsCount\">\n          <option value=\"1\">1</option>\n          <option value=\"2\">2</option>\n          <option value=\"3\">3</option>\n          <option value=\"4\" selected>4</option>\n          <option value=\"5\">5</option>\n          <option value=\"6\">6</option>\n      </select>\n        <input type=\"checkbox\" title=\"Media On Right/Left\" name=\"mediaLeft\">\n        <header>Color</header>\n        <input type=\"color\" title=\"Line 1\" name=\"LineColor\" value=\"#223668\">\n        <input type=\"color\" title=\"Line 2\" name=\"LineColor2\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Icon\" name=\"IconColor\" value=\"#45b3df\">\n        \n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@THEME_PATH@/components/_images/children.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#690a65\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/201169087\n            \">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <svg class=\"svg-2\" data-name=\"Layer 2\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1428.75 65.53\"><defs><style>.cls-1{fill:#17ff79;}</style></defs><title>Screenshot_4</title><path class=\"cls-1\" d=\"M-114,158s138-33,369-17c0,0,70.5,2.5,310,21.5,0,0,157,14.17,314.33,8.83,0,0,105.17-2.33,435.42-49.33V107H-114Z\" transform=\"translate(114 -107)\"></path></svg>\n    <div class=\"container-fluid\">\n        <div class=\"row justify-content-center content-row\">\n            <div class=\"plan md-pb col-12 col-md-6 col-lg-3 justify-content-center\" mbr-if=\"itemsCount1 > 0\">\n                <div class=\"plan-wrapper plan-wrapper1\">\n                    <div class=\"plan-header text-center price1\">\n                        <svg class=\"svg-card\" data-name=\"Layer 2\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 166.5 16.51\"><defs><style>.cls-1{fill:#00a232;}</style></defs><title>Screenshot_3</title><path class=\"cls-1\" d=\"M518.5,142.5H534s-.25,13.75,16,16.5c0,0,15.25,1,17.5-16.5h17.25s-.25,14,17,16.51c0,0,15,.24,16.75-16.51h18S637,158,653.5,159c0,0,15-.26,16.5-16.51H518.5Z\" transform=\"translate(-518.5 -142.5)\"></path></svg>\n                        <div class=\"plan-price\">\n                            <h3 mbr-text class=\"price-figure color1 pb-1 mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".color1\">\n                                $21.99</h3>\n                            <h4 mbr-text class=\"price-term price-term1 pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".price-term\">ONE MONTH</h4>\n                        </div>\n                        <div class=\"icon-name\">\n                          <span class><a href=\"#\"><span mbr-if mbr-icon class=\"mbr-iconfont mbr-iconfont2 socicon mbrib-success\"></span></a></span>\n                          <h4 class=\"card-title card-title2 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if data-app-selector=\".card-title2\">\n                          Basic</h4>\n                        </div>\n                    </div>\n                    <div class=\"plan-body\">\n                        <div class=\"plan-list align-center\">\n                            <ul mbr-text class=\"list-group list-group-flush mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".list-group\">\n                                <li class=\"list-group-item\">Global</li>\n                                <li class=\"list-group-item\">Xbox Live</li>\n                                <li class=\"list-group-item\">Digital key</li>\n                            </ul>\n                        </div>\n                        <div mbr-buttons mbr-theme-style=\"display-7\" class=\"button-svg mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amount=21.99&item_name=XBOX%20PASS%20ONE%20MONTH&currency_code=USD&add=1\" data-app-placeholder=\"Type Text\">Choose<svg class=\"wgl-dashes svg1 inner-dashed-border animated-dashes\"><rect x=\"2px\" y=\"2px\" rx=\"25px\" ry=\"25px\" width=\"100%\" height=\"100%\"></rect></svg>\n                        </a></div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"plan plan2 col-12 col-md-6 col-lg-3 justify-content-center\" mbr-if=\"itemsCount1 > 1\">\n                <div class=\"plan-wrapper\">\n                    <div class=\"plan-header text-center price2\">\n                        <svg class=\"svg-card\" data-name=\"Layer 2\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 166.5 16.51\"><defs><style>.cls-1{fill:#00a232;}</style></defs><title>Screenshot_3</title><path class=\"cls-1\" d=\"M518.5,142.5H534s-.25,13.75,16,16.5c0,0,15.25,1,17.5-16.5h17.25s-.25,14,17,16.51c0,0,15,.24,16.75-16.51h18S637,158,653.5,159c0,0,15-.26,16.5-16.51H518.5Z\" transform=\"translate(-518.5 -142.5)\"></path></svg>\n                        <div class=\"plan-price\">\n                            <h3 mbr-text class=\"price-figure color2 pb-1 mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".color2\">\n                                $55.99</h3>\n                            <h4 mbr-text class=\"price-term price-term price-term2 pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".price-term\">3 MONTHS</h4>\n                            <div class=\"line-wrap\">\n                                <div class=\"line line2 \"></div>\n                            </div>\n                        </div>\n                        <div class=\"icon-name\">\n                          <span class><a href=\"#\"><span mbr-if mbr-icon class=\"mbr-iconfont mbr-iconfont2 socicon mbrib-success\"></span></a></span>\n                          <h4 class=\"card-title card-title2 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if data-app-selector=\".card-title2\">\n                          Pro</h4>\n                        </div>\n                    </div>\n                    <div class=\"plan-body\">\n                        <div class=\"plan-list align-center\">\n                          <ul mbr-text class=\"list-group list-group-flush mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".list-group\">\n                            <li class=\"list-group-item\"><span style=\"font-size: 1.1rem; letter-spacing: 0px;\">Global</span></li><li class=\"list-group-item\"><span style=\"font-size: 1.1rem; letter-spacing: 0px;\">Xbox Live</span><br></li>\n                            <li class=\"list-group-item\"><span style=\"font-size: 1.1rem; letter-spacing: 0px;\">Digital key</span><br></li>\n                            <li class=\"list-group-item\">-$10&nbsp;&nbsp;</li>\n                          </ul>\n                        </div>\n                        <div mbr-buttons mbr-theme-style=\"display-7\" class=\"button-svg mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-warning\" href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amount=49.99&item_name=XBOX%20PASS%203%20MONTHS&currency_code=USD&add=1\" data-app-placeholder=\"Type Text\">Choose<svg class=\"wgl-dashes svg1 inner-dashed-border animated-dashes\"><rect x=\"2px\" y=\"2px\" rx=\"25px\" ry=\"25px\" width=\"100%\" height=\"100%\"></rect></svg>\n                        </a></div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-lg-5 col-md-6 col-md-12 md-pb left-wrapper\">\n              <h3 class=\"mbr-section-subtitle pb-2 align-left mbr-white mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showSubTitle\">Help Subscription</h3>\n              <h2 class=\"mbr-section-title mbr-bold align-left mbr-white mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".left-wrapper, .mbr-section-title\">New Arrivals</h2>\n              \n              <p class=\"mbr-text mbr-white mbr-light align-left mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-if=\"showText\">\n                  Xbox Game Pass Ultimate includes the standard Game Pass library but adds in so much more. PC Game Pass, Xbox Cloud Gaming, EA Play, Xbox Live Gold, and extra monthly perks for a variety of games, all handy additions. At just a few dollars more, we'd absolutely go with Ultimate if you can afford it </p>\n              <div mbr-list mbr-list-grow=\"itemsCount\">\n              <div class=\"circle-icon\">\n                <span class=\"wgl-icon wgl-icon1\"><a href=\"#\"><span mbr-if mbr-icon class=\"icon1 mbr-iconfont socicon mbrib-success\"></span></a></span>\n                <div class=\"card-box\">\n                  <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if data-app-selector=\".circle-icon\">Play over 100 high-quality&nbsp;</h4>\n                </div>\n              </div>\n              \n                <div class=\"circle-icon\">\n                  <span class=\"wgl-icon wgl-icon1\"><a href=\"#\"><span mbr-if mbr-icon class=\"icon1 mbr-iconfont socicon mbrib-success\"></span></a></span>\n                  <div class=\"card-box\">\n                    <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if data-app-selector=\".circle-icon\">Play games from the cloud.</h4>\n                  </div>\n                </div>\n                <div class=\"circle-icon\">\n                  <span class=\"wgl-icon wgl-icon1\"><a href=\"#\"><span mbr-if mbr-icon class=\"icon1 mbr-iconfont socicon mbrib-success\"></span></a></span>\n                  <div class=\"card-box\">\n                    <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if data-app-selector=\".circle-icon\">New games added all the time.</h4>\n                  </div>\n                </div>\n                <div class=\"circle-icon\">\n                  <span class=\"wgl-icon wgl-icon1\"><a href=\"#\"><span mbr-if mbr-icon class=\"icon1 mbr-iconfont socicon mbrib-success\"></span></a></span>\n                  <div class=\"card-box\">\n                    <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if data-app-selector=\".circle-icon\">Xbox Live Gold.</h4>\n                  </div>\n                </div>\n              </div>\n          </div>\n        </div>\n    </div>\n    <svg viewBox=\"1 0 1410.75 62\" class=\"svg-3\" data-name=\"Layer 3\" xmlns=\"http://www.w3.org/2000/svg\"><defs><style>.cls-1{fill:#17ff79;stroke:#ffc28b;}</style></defs><title>Screenshot_4</title><path class=\"cls-1\" d=\"M-114,158S4,124,287.33,141.33c0,0,154.67,10.67,276,20.67,0,0,177.67,12,228.17,11,0,0,157.5-2.5,226-14,0,0,288-38,297.25-37.5v71H-114Z\" transform=\"translate(114.5 -121)\"></path></svg>\n</section>",
+          "_cid": "rGtYwMFIZr",
+          "_anchor": "pricing-tables1-a",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            ".mbr-overlay": {
+              "background-color": "@overlayColor",
+              "opacity": "@overlayOpacity"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".btn-black": {
+              "background": "black!important",
+              "border-radius": "6px",
+              "&:hover": {
+                "background": "gray!important",
+                "border-color": "gray!important"
+              }
+            },
+            "textarea": {
+              "min-height": "150px"
+            },
+            ".btn": {
+              "border-radius": "30px",
+              "padding": "0.7rem 2.4rem",
+              "margin": "0",
+              "position": "relative"
+            },
+            ".inner-dashed-border": {
+              "stroke": "#ffffff",
+              "left": "0",
+              "top": "0",
+              "width": "100%",
+              "height": "100%"
+            },
+            ".button-svg:hover .inner-dashed-border": {
+              "animation-play-state": "running",
+              "stroke": "#ffffff"
+            },
+            "@keyframes dashed_border_running": {
+              "100%": {
+                "stroke-dashoffset": "-1000"
+              }
+            },
+            ".svg1": {
+              "position": "absolute",
+              "padding": "2px",
+              "rect": {
+                "width": "~\"calc(100% - 4px)\"",
+                "height": "~\"calc(100% - 4px)\""
+              }
+            },
+            ".mbr-text": {
+              "margin-bottom": "1.5rem"
+            },
+            ".container-fluid": {
+              "max-width": "1200px"
+            },
+            "@media (max-width: 767px)": {
+              "padding-top": "(@paddingTop * 2px)",
+              "padding-bottom": "(@paddingBottom * 2px)",
+              ".container-fluid": {
+                "padding": "0 1rem"
+              },
+              ".mbr-section-btn": {
+                "width": "100%",
+                "text-align": "left"
+              },
+              ".mbr-section-title": {
+                "text-align": "left"
+              }
+            },
+            "@media (min-width: 767px)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)",
+              ".container-fluid": {
+                "padding": "0 1.5rem"
+              }
+            },
+            ".mbr-section-btn": {
+              "margin": "0",
+              "margin-left": "5px"
+            },
+            ".wrapper-title": {
+              "padding": "0rem"
+            }
+          },
+          "_name": "forms2",
+          "_customHTML": "<section class=\"form\" group=\"Form\" plugins=\"formstyler, datepicker\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@THEME_PATH@/components/_images/children.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"(overlay && bg.type=='image')\"></div>\n    <div class=\"container-fluid\">\n        <div class=\"row\">\n            <div mbr-form class=\"col-lg-12 mx-auto mbr-form\">\n                <!--Formbuilder Form-->\n                <div class=\"col-lg-12 wrapper-title\">\n                    <h5 mbr-theme-style=\"display-2\" class=\"mbr-fonts-style mbr-section-title\">Contact me</h5>\n                    <p class=\"mbr-text mbr-fonts-style mbr-light\" data-app-selector=\".mbr-text\" mbr-if=\"showText\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>\n                </div>\n                <form action=\"sfgfgfsg@gmail.com\" name=\"Form Name\" method=\"POST\" class=\"mbr-form form-with-styler\">\n                    <div class=\"form-row\">\n                        <div hidden=\"hidden\" data-form-alert class=\"alert alert-success col-12\">Thanks for filling out\n                            the form!</div>\n                        <div hidden=\"hidden\" data-form-alert-danger class=\"alert alert-danger col-12\">Oops...! some\n                            problem!</div>\n                    </div>\n                    <div class=\"dragArea form-row\">\n                        <div class=\"col-lg-12 col-md-12 col-sm-12 form-group\">\n                            <div class=\"form-row\">\n                                <div class=\"col\" data-for=\"Name\">\n                                    <input type=\"text\" name=\"Name\" placeholder=\"Your Name *\" data-form-field=\"name\" class=\"form-control text-multiple\" value>\n                                </div>\n                                <div class=\"col\" data-for=\"E-mail\">\n                                    <input type=\"text\" name=\"E-mail\" placeholder=\"Your E-mail *\" data-form-field=\"e-mail\" class=\"form-control text-multiple\" value>\n                                </div>\n                            </div>\n                        </div>\n                        <div data-for=\"subject\" class=\"col-lg-12 col-md-12 col-sm-12 form-group\">\n                          <input type=\"text\" name=\"subject\" placeholder=\"Web site\" data-form-field=\"website\" mbr-theme-style=\"display-7\" class=\"form-control\" value>\n                        </div>\n                        <div class=\"col-lg-12 col-md-12 col-sm-12 form-group\" data-for=\"message\">\n                          <textarea name=\"message\" placeholder=\"Message\" data-form-field=\"message\" mbr-theme-style=\"display-7\" class=\"form-control\"></textarea>\n                        </div>\n                        <div mbr-buttons mbr-theme-style=\"display-7\" class=\"button-svg mbr-section-btn align-left\" mbr-if data-toolbar=\"-mbrBtnMove,-mbrBtnRemove,-mbrBtnAdd\"><a type=\"submit\" class=\"btn btn-primary\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">Post A Comment<svg class=\"wgl-dashes svg1 inner-dashed-border animated-dashes\" fill=\"transparent\" stroke-width=\"2\" stroke-dasharray=\"9 5\" stroke-dashoffset=\"0\" stroke-linecap=\"round\"><rect x=\"2px\" y=\"2px\" rx=\"25px\" ry=\"25px\" width=\"100%\" height=\"100%\"></rect></svg>\n                        </a></div>\n                    </div>\n                </form>\n                <!--Formbuilder Form-->\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rHBarEaSTI",
+          "_anchor": "forms2-q",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
